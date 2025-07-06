@@ -31,7 +31,7 @@ const FeedbackForm = () => {
         formData
       );
       console.log(response.data.message);
-      toast.success("✅ Feedback submitted successfully!");
+      toast.success(`✅ ${response.data.message}`);
 
       // Reset all fields
       setFullName("");
