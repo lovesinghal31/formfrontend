@@ -30,7 +30,7 @@ const FeedbackForm = () => {
         "https://formbackend-f471.onrender.com/api/v1/user/feedback",
         formData
       );
-      console.log(response.message);
+      console.log(response.data.message);
       toast.success("✅ Feedback submitted successfully!");
 
       // Reset all fields
